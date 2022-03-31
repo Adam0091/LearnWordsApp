@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LearnWordsApp</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </head>
+  <body>
     <div class="page">
+      
+      <div class="form">
+        <div class="counter-correct-answer" id="counter-correct-answer"></div>
+
         <div class="reapet-word">
+          <img src="./assets/images/voice-command.png" alt="voice" />
         </div>
         <div class="input-word">
-            <input type="text" name="" id="input-word__input">
+          <input
+            type="text"
+            class="input-word__input"
+            name=""
+            id="input-word__input"
+            autocomplete="off"
+            spellcheck="false"
+            maxlength="15"
+          />
+        </div>
+        <div class="output-word" id="output-word">
+
         </div>
         <div class="send-word">
-            <button class="send-word__btn" id="send-word__btn">Отправить</button>
+          <button class="send-word__btn" id="send-word__btn">Отправить</button>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
