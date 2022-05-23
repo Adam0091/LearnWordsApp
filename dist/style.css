@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counter-correct-answer {
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-style: bold;
+    font-size: 22px;
+}
+.reapet-word {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.input-word__input {
+    width: 100%; 
+    height: 30px;
+    text-align: center;
+    font-style: bold;
+    font-size: 22px;
+}
+input:invalid {
+    background-color: red;
+} 
+.input-word__input--correct{
+    color: green;
+    border-color: green;
+}
+.input-word__input--wrong{
+    color: red;
+    border-color: red;
+}
+.send-word {
+}
+.send-word__btn {
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+}
+.output-word {
+    text-align: center;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+.output-word--wrong {
+    color: red;
+}
+.output-word--correct {
+    color: green;
+}
+
+
+@keyframes speek {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
